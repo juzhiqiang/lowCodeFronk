@@ -19,7 +19,7 @@ export class TransformInterceptor<T>
     context: ExecutionContext,
     next: CallHandler,
   ): Observable<Response<T>> {
-    return next.handle().pipe(
+    next.handle().pipe(
       map((data) => ({
         data,
         status: 0,
@@ -28,5 +28,6 @@ export class TransformInterceptor<T>
         success: true,
       })),
     );
+    return next.handle();
   }
 }

@@ -17,13 +17,10 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
+    "resolveJsonModule": true,
     "paths": {
-      "@coom/comm": [
-        "libs/comm/src"
-      ],
-      "@coom/comm/*": [
-        "libs/comm/src/*"
-      ]
+      "@coom/comm": ["libs/comm/src"],
+      "@coom/comm/*": ["libs/comm/src/*"]
     }
   }
 }

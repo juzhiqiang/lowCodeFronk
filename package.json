@@ -11,6 +11,7 @@
     "start": "turbo run dev",
     "start:lowcode": "cross-env RUNNING_ENV=dev nest start --watch",
     "start:devops": "cross-env RUNNING_ENV=dev nest start devops --watch",
+    "start:hotdev": "cross-env RUNNING_ENV=dev nest build --webpack --webpackPath webpack-hmr.config.js --watch",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/apps/project-name/main",
@@ -28,9 +29,15 @@
     "@nestjs/platform-express": "^9.0.0",
     "@nestjs/swagger": "^7.3.0",
     "cross-env": "^7.0.3",
+    "mongoose": "^8.1.1",
+    "mysql2": "^3.9.1",
     "reflect-metadata": "^0.1.13",
+    "run-script-webpack-plugin": "^0.2.0",
     "rxjs": "^7.2.0",
     "turbo": "^1.9.8",
+    "typeorm": "^0.3.20",
+    "webpack": "^5.90.1",
+    "webpack-node-externals": "^3.0.0",
     "yaml": "^2.3.4"
   },
   "devDependencies": {
